@@ -1,0 +1,95 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background: url(../images/bg.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app{
+  width: 375px;
+  height: 667px;
+  background: white;
+  box-shadow: 0 0 10px rgba(196, 196, 196, 0.233);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.chat{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.title{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  background: rgb(250, 98, 157);
+  color: white;
+  font-size: 22px;
+  padding: 10px 0;
+  box-shadow: 0 0 10px rgba(196, 196, 196, 0.233);
+}
+
+input{
+  width: 60%;
+  padding: 10px 5px;
+  border-radius: 5px;
+  border: 1px solid #dedede;
+}
+
+button{
+  width: 35%;
+  margin-left: 5%;
+  border: 1px solid #dedede;
+  background: rgb(250, 98, 157);
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+button:active{
+  filter: brightness(1.1);
+}
+
+.content{
+  position: absolute;
+  height: 560px;
+  width: 100%;
+  top: 50px;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.msg{
+  margin-bottom: 20px;
+  position: relative;
+}
+.msg > div{
+  max-width: 80%;
+  width: fit-content;
+  background: #ffc1c1;
+  border-radius: 20px;
+  padding: 10px 20px;
+  word-break: break-word;
+}
+
+.msg.right{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.msg.right > div{
+  background: #dedede;
+}
